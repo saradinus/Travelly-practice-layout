@@ -1,6 +1,7 @@
 /* General CSS */ 
 body {
      background-color: #eeeeee;
+    font-family: 'Montserrat', sans-serif;
 }
 .container {
     max-width: 1000px;
@@ -21,15 +22,14 @@ height: 178px;
 }
 .destination_row {
     display: flex;
-flex-basis: 50%;
     flex-wrap: wrap;
 }
-.single_destination {
+.destination_single {
     max-width: 238px;
     background: white;
     margin: 0 1.17vw 0 0;
 }
-.single_destination:last-child {
+.destination_single:last-child {
     margin: 0;
 }
 .destination p {
@@ -54,4 +54,29 @@ color: #9a9a9a;
 /* Before Leave CSS */ 
 .before_leave {
     background-color: white;
+}
+.before_leave h2 {
+    color: #050505;
+    font-size: 3rem;
+    font-weight: 300;
+    padding-top: 7vh;
+}
+.before_leave h3 {
+    font-size: 0.8rem;
+color: #9a9a9a;
+}
+.before_leave p {
+    font-size: 0.9rem;
+color: #9a9a9a;
+}
+.before_leave_row {
+        display: flex;
+    flex-wrap: wrap;
+}
+.before_leave_single {
+    max-width: 300px;
+     margin: 0 2vw 0 0;
+}
+.destination_single:last-child {
+    margin: 0;
 }
