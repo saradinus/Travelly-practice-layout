@@ -2,12 +2,12 @@
 body {
      background-color: #eeeeee;
     font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 .container {
     max-width: 1000px;
       margin-left:auto;margin-right:auto;
-    background-color: #eeeeee;
-    border: 1px solid black;
 }
 .upper {
     text-transform: uppercase;
@@ -17,6 +17,9 @@ body {
  height: auto;
 }
 /* Destination CSS */ 
+.destination {
+        background-color: #eeeeee;
+}
 .destination img {
 height: 178px;
 }
@@ -25,7 +28,7 @@ height: 178px;
     flex-wrap: wrap;
 }
 .destination_single {
-    max-width: 238px;
+    max-width: 22%;
     background: white;
     margin: 0 1.17vw 0 0;
 }
@@ -72,11 +75,80 @@ color: #9a9a9a;
 .before_leave_row {
         display: flex;
     flex-wrap: wrap;
+    padding-bottom: 5vh;
 }
 .before_leave_single {
-    max-width: 300px;
+    max-width: 30%;
      margin: 0 2vw 0 0;
 }
 .destination_single:last-child {
     margin: 0;
+}
+/* Subscribe box */
+.before_leave_subscribe h3 {
+    text-align: center;
+    padding-bottom: 1vh;
+}
+.before_leave_subscribe {
+    margin: 0 auto;
+    width: 40%;
+    padding-bottom: 10vh;
+}
+.before_leave_subscribe input {
+   padding: 1vh 7vw 1vh 0.5vw;   
+    border: none;
+    background-color: #eeeeee;
+    color: #848484;
+}
+.subscribe_btn {
+    background-color: red;
+    padding: 1vh 2.5vw;
+    border: none;
+    color: white;
+    font-weight: bold;    
+}
+@media screen and (max-width: 960px) {
+.before_leave_single {
+    max-width: 30%;
+}
+    .destination_single {
+    max-width: 50%;
+}
+}
+@media screen and (max-width: 768px) {
+    .before_leave_single {
+    max-width: 100%;
+}
+        .destination_single {
+    max-width: 50%;
+}
+}
+@media screen and (max-width: 550px) {
+ .before_leave_single {
+    max-width: 100%;
+}
+        .destination_single {
+    max-width: 100%;
+margin: 0;
+}
+    .destination_row img {
+display: flex;
+        margin: 0 auto;
+    }
+    .destination_row p {
+        text-align: center;
+    }
+    .destination_row h3 {
+        text-align: center;
+    }
+    .before_leave_subscribe {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 420px) {
+       .before_leave_subscribe {
+        width: 60%;
+           margin: 0 auto;
+           text-align: center;
+    }
 }
